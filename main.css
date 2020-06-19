@@ -475,6 +475,39 @@ figure img {
 }
 
 
+.button-wrap .btn.popup-close{
+    background: #FF4864 !important;
+    margin-right: auto !important;
+    width: auto !important;
+    height: 50px !important;
+    color: #FFFFFF !important;
+    padding: 0 33px 0 65px !important;
+    text-align: right;
+    position: relative;
+    opacity: 1 !important;
+    margin-bottom: 0;
+    margin-left: inherit;
+    bottom: auto;
+    right: auto;
+}
+
+
+/* Old shadow dom for play button */
+
+*::-webkit-media-controls-play-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+/* New shadow dom for play button */
+
+/* This one works! */
+
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
 /* =============== Responsive style =============== */
 @media only screen and (max-height: 736px) {
 

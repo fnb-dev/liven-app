@@ -38,17 +38,8 @@
                     </div>
                     <img class="vector-img" src="shape-vector.svg" alt="Vector shape">
                     <div class="button-wrap">
-                        <a href="#" class="full-video btn" id="playFullVideo"><div class="btn-icon"><img src="play-icon.svg" alt=""></div>Full video</a>
+                        <a href="#" class="popup-close btn" id="closePopup"><div class="btn-icon"><img src="close-black.png" alt=""></div>Close</a>
                     </div>
-                </div>
-                <button class="popup-close">
-                   <img src="close-black.png" alt="">
-                </button>
-            </div>
-            <div class="youtube-video">
-                <div class="overlay"></div>
-                <div class="iframe-container">
-                  <div id="youtubePlayer"></div>
                 </div>
             </div>
         </div>
@@ -101,8 +92,10 @@
         });
         
         $("#closePopup").on('click', function (e){
-            player.stopVideo();
-            $('.youtube-video').fadeOut();
+            //player.stopVideo();
+            myVideo.currentTime = 0; 
+            myVideo.pause();
+            //$('.youtube-video').fadeOut();
         });
         
 //        
